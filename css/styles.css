@@ -1,0 +1,146 @@
+/*************************************/
+/***********     RESET       *********/
+/*************************************/
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+
+/*************************************/
+/***********    COMMONS    ***********/
+/*************************************/
+
+body{
+	display: flex;
+	justify-content: center;
+	background: radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#282828;
+	background-size:16px 16px;
+}
+
+.container{
+	width: 1024px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background: grey;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container > header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container > main {
+	margin: 20px 0;
+	flex-grow: 1;
+}
+.container > footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*************************************/
+/************   MAIN NAV   ***********/
+/*************************************/
+
+#main-nav {
+	display: inline;
+}
+
+#main-nav > ul {
+	display: flex;
+}
+
+#main-nav > ul > li {
+	color: white;
+}
+
+#main-nav > ul > li:not(:last-child):after {
+	content: "|";
+	margin: 0 10px;
+}
+
+#main-nav > ul > li > a{
+	text-decoration: none;
+	color: black;
+}
+
+#main-nav > ul > li > a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+
+/*************************************/
+/************   FOOTER   *************/
+/*************************************/
+
+
+footer > #last-modified {}
+
+footer > #validatations {}
+
+footer > #validatations > a {}
+footer > #validatations > a:nth-of-type(1) {}
+footer > #validatations > a:nth-of-type(2) {}
+
+
+
+/*************************************/
+/***********   HOMEWORK 1  ***********/
+/*************************************/
+
+
+#homework-1 {}
+
+#homework-1 > .container > main {
+	display: flex;
+	justify-content: center;
+	background: lightgrey;
+}
+
+#homework-1 table#homework-summary{
+	width: 100%;
+	border-collapse: collapse;
+	line-height: 1.6;
+}
+
+#homework-1 table#homework-summary > thead {
+	background: #BDAD98;
+}
+
+#homework-1 table#homework-summary > thead > tr{}
+
+#homework-1 table#homework-summary > thead > tr > th{
+	text-align: left;
+	line-height: 2;
+}
+
+#homework-1 table#homework-summary > tbody > tr > td:nth-of-type(1),
+#homework-1 table#homework-summary > thead > tr > th:nth-of-type(1) {
+	padding-left: 10px;
+}
+
+
+#homework-1 table#homework-summary > tbody > tr:nth-child(odd){
+	background: #BDA298;
+}
+
+#homework-1 table#homework-summary > tbody > tr:nth-child(even){
+	background: #BDB498;
+}
