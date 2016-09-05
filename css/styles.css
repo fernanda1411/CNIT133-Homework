@@ -46,7 +46,19 @@ body{
 .container > main {
 	margin: 20px 0;
 	flex-grow: 1;
+	background: lightgrey;
+	padding: 20px;
 }
+
+.container > main > header{
+	padding-bottom: 20px;
+}
+
+.container > main > main {
+	display: flex;
+	justify-content: flex-start;
+}
+
 .container > footer {
 	display: flex;
 	justify-content: space-between;
@@ -89,6 +101,49 @@ body{
 	color: white;
 }
 
+
+/*************************************/
+/***********   SUB MENU   ************/
+/*************************************/
+
+.container > main > main > aside.sub-menu{
+	margin-right: 20px;
+	padding: 10px;
+	background: #999;
+}
+.container > main > main > aside.sub-menu > ul{}
+.container > main > main > aside.sub-menu > ul > li{
+	border-width: 1px 0 0 0;
+	border-style: dotted;
+	border-color: #333;
+	padding: 5px 2px;
+}
+.container > main > main > aside.sub-menu > ul > li:last-of-type{
+	border-width: 1px 0 1px 0;
+	border-style: dotted;
+	border-color: #333;
+}
+.container > main > main > aside.sub-menu > ul > li > a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.container > main > main > aside.sub-menu > ul > li > a:hover,
+.container > main > main > aside.sub-menu > ul > li.active > a{
+	color: white;
+}
+
+/*************************************/
+/***********   SUB CONTENT   *********/
+/*************************************/
+.container > main > main > article{
+	padding: 10px;
+	background: #999;
+	width: 100%;
+	min-height: 100%;
+}
+
 /*************************************/
 /************   FOOTER   *************/
 /*************************************/
@@ -103,19 +158,77 @@ footer > #validatations > a:nth-of-type(1) {}
 footer > #validatations > a:nth-of-type(2) {}
 
 
+/*************************************/
+/**************   FORMS   ************/
+/*************************************/
+
+.myform{
+	width: 50%;
+}
+.myform > label{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.myform > label > span{
+	text-align: right;
+	display: block;
+	width: 45%;
+}
+.myform > label > input{
+	border: 1px solid black;
+	width:54%;
+	padding: 5px;
+}
+.myform > .controls{
+	display: flex;
+	justify-content: flex-end;
+	margin-top:10px;
+}
+
+.myform > .controls > input{
+ 	margin-left: 5px;
+ 	padding:2px;
+ 	border: 1px solid black;
+}
+
+.myform > .controls > input:hover{
+ 	margin-left: 5px;
+ 	padding:2px;
+ 	border-color: #fff;
+ 	background: #999;
+ 	color: #fff;
+}
+
+
+/*************************************/
+/**************   Tables   ***********/
+/*************************************/
+
+table {
+    border-collapse: collapse;
+}
+
+table input{
+	text-align: right;
+	padding: 5px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 15px;
+    text-align: right;
+}
+
+td{
+	padding: 5px 20px;
+}
+
+
 
 /*************************************/
 /***********   HOMEWORK 1  ***********/
 /*************************************/
-
-
-#homework-1 {}
-
-#homework-1 > .container > main {
-	display: flex;
-	justify-content: center;
-	background: lightgrey;
-}
 
 #homework-1 table#homework-summary{
 	width: 100%;

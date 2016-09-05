@@ -1,49 +1,313 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>CNIT 133 - Homework 2 - Basic Operations</title>
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body id="homework-2">
-		<div class="container">
-			<header>
-				<h1>CNIT 133 Homework Page</h1>
-				<nav id="main-nav">
-					<ul>
-						<li><a href="cnit133_hw1.html">HW1</a></li>
-						<li class="active"><a href="cnit133_hw2.html">HW2</a></li>
-						<li><a href="cnit133_hw3.html">HW3</a></li>
-						<li><a href="cnit133_hw4.html">HW4</a></li>
-						<li><a href="cnit133_hw5.html">HW5</a></li>
-						<li><a href="cnit133_hw6.html">HW6</a></li>
-						<li><a href="cnit133_hw7.html">HW7</a></li>
-						<li><a href="cnit133_hw8.html">HW8</a></li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<h1>Homework 2 - Basic Operations</h1>
-				<p>Under construction</p>
-			</main>
-			<footer>
-				<p id="last-modified">
-					<script type="text/javascript">
-						// I've just used the script from the teacher sample as it's pretty straight forward.
+<html lang="en">
 
-						// Save the document property lastModified in a variable
-						var dateModified = document.lastModified;
-						// Removing second from String dateModified ( :ss )
-						mydate = dateModified.slice(0,16);
-						// Printing last updated date to document
-						document.write("Last updated: " + mydate);	
-					</script>
-				</p>
-				<div id="validations">
-					<a href="https://validator.w3.org/check?uri=referer"><img src="./assets/html5a.jpg" alt="HTML5"></a>
-					<a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./assets/vcss-blue.gif" alt="Valid CSS!"></a>
-				</div>
-			</footer>
-		</div>
-	</body>
+<head>
+    <title>CNIT 133 - Homework 2 - Basic Operations</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="homework-2">
+    <div class="container">
+        <header>
+            <h1>CNIT 133 Homework Page</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="cnit133_hw1.html">HW1</a></li>
+                    <li class="active"><a href="cnit133_hw2.html">HW2</a></li>
+                    <li><a href="cnit133_hw3.html">HW3</a></li>
+                    <li><a href="cnit133_hw4.html">HW4</a></li>
+                    <li><a href="cnit133_hw5.html">HW5</a></li>
+                    <li><a href="cnit133_hw6.html">HW6</a></li>
+                    <li><a href="cnit133_hw7.html">HW7</a></li>
+                    <li><a href="cnit133_hw8.html">HW8</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Homework 2 - Basic Operations</h1>
+            </header>
+            <main>
+                <aside class="sub-menu">
+                    <ul>
+                        <li><a href="cnit133_hw2_part1.html">Part 1 - document.write statements</a></li>
+                        <li><a href="cnit133_hw2_part2.html">Part 2 - Input 3 integers</a></li>
+                        <li><a href="cnit133_hw2_part3.html">Part 3 - jQuery</a></li>
+                        <li><a href="cnit133_hw2_part4.html">Part 4 - Calculation Table</a></li>
+                        <li><a href="cnit133_hw2_extracredit.html">Extra Credit - Exchange rates</a></li>
+                    </ul>
+                </aside>
+                <article>
+                    <div id="intro" class="box generalbox boxaligncenter">
+                        <div class="no-overflow" id="yui_3_15_0_2_1472942809620_237">
+                            <h2 style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="font-size: large;" size="4">Homework 2 - Basic Operations</span></h2>
+                            <h3 style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="font-size: medium;" size="3">Due Date: Sept 3<br><br></span></h3>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Create a web page using HTML5 with the heading CNIT 133 Homework 2 - Basic Operations.</p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">The contents of this page should be a list of links referring to Parts 1-4 discussed below. Label the links, Part1, Part2, Part3, and Part4 and display a short description of each part. Here are some sample cover pages:</p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" id="yui_3_15_0_2_1472942809620_236"><a href="http://fog.ccsf.cc.ca.us/~srubin/sampleCover1.html" id="yui_3_15_0_2_1472942809620_235">Sample 1</a></p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" id="yui_3_15_0_2_1472942809620_241"><a href="http://fog.ccsf.cc.ca.us/~srubin/sampleCover3.html" id="yui_3_15_0_2_1472942809620_240">Sample 2 </a></p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" id="yui_3_15_0_2_1472942809620_243"><a href="http://fog.ccsf.edu/~srubin/hw2Boot-cover.html" id="yui_3_15_0_2_1472942809620_242">Sample 3 - Bootstrap</a></p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                                <br style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><strong>For each page that exhibits a part of HW2, it is required to have links to the other parts using a navigation bar of links or a link back to the cover page</strong>. Please do this for<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">ALL</span><span class="Apple-converted-space">&nbsp;</span>future homework assignments.
+                                <br>
+                                <br>
+                            </p>
+                            <p><b>Part 1:<span class="Apple-converted-space">&nbsp;</span></b>
+                                <br>
+                                <br><span>Create a webpage that contains a script that displays in pairs and <b>strong</b> (<span>bold)</span>, the letters<strong>&nbsp;</strong></span>ab<span>&nbsp;and the numbers&nbsp;</span>12 and 34<span>&nbsp;on the same line, with each pair of characters separated by one space. Write the script using </span><span>document.write statements. Use a font family of <span style="font-family: 'times new roman', times, serif;"><strong>Times New Roman</strong></span> and the color <span style="color: #ff0000;"><strong>red</strong></span> for the letters&nbsp;</span><span style="color: #ff0000;"><strong>a</strong></span><span><span style="color: #ff0000;"><strong>b</strong></span>, <span>a font family of <span style="font-family: arial, helvetica, sans-serif;"><strong>Arial</strong></span> and the color <span style="color: #0000ff;"><strong>blue</strong></span> for the</span>&nbsp;the numbers&nbsp;</span><span style="color: #0000ff;"><strong>12 </strong></span>and a font family of <strong>Impact</strong>, the color <strong><span style="color: #008000;">green</span></strong>, and <i><b>emphasized</b></i> (in italics) for the numbers <em><span style="font-family: impact;"><strong><span style="color: #008000;">34</span></strong></span></em><span>.&nbsp;</span>
+                                <br>
+                                <br><span>Your output should <span style="font-family: 'times new roman', times, serif;">look</span> like this: &nbsp; &nbsp; &nbsp;<strong>&nbsp;</strong></span><strong><span color="blue"><span style="font-family: 'times new roman', times, serif; color: #ff0000;">ab</span> <span style="font-family: arial, helvetica, sans-serif; color: #3366ff;">12 <span style="color: #008000; font-family: impact;"><em>34</em></span></span></span></strong></p>
+                            <p><span color="red">&nbsp;</span></p>
+                            <p><b>Part 2:<span class="Apple-converted-space">&nbsp;</span></b>
+                                <br>
+                                <br>Create a webpage that contains a script that inputs three integers via form text boxes and displays the sum, average, and product of the three integers, and the smallest and largest of the three integers. Your results should be displayed using alerts or a form textarea or a div element.<span class="Apple-converted-space"> </span></p>
+                            <p><span style="font-size: xx-small;" size="1"><span style="font-weight: bold;"><span style="font-size: small;">Hint:</span></span><span style="font-size: small;" class="Apple-converted-space">&nbsp;</span></span><span style="font-size: small;" size="2"><span style="font-size: xx-small;" size="1"><span style="font-size: small;">For finding the smallest and largest number, use the Math Object Methods of min and max.</span><span class="Apple-converted-space"> <br></span></span>
+                                </span>
+                            </p>
+                            <p><span style="font-size: small;" size="2"><span style="font-size: xx-small;" size="1"><span class="Apple-converted-space"><br></span></span>
+                                </span>
+                            </p>
+                            <p></p>
+                            <p><b>Part 3:<span class="Apple-converted-space">&nbsp;</span></b>
+                                <br>
+                                <br>Create a webpage that contains a script that inputs 5 numbers and determines and displays the count of the negative numbers, the number of positive numbers, and the number of zeros. For input, use form text boxes. Your results should be displayed using a form textarea or a div element. Define a 'Click to Fade Results' button on the form. Use jQuery to define a ready handler that defines a click event handler for the button, such that clicking the button fades the results in the textarea.
+                                <br>See this jQuery example:<span class="Apple-converted-space">&nbsp;</span><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_fadeto">fading an element</a><span class="Apple-converted-space">&nbsp;</span>or this<span class="Apple-converted-space">&nbsp;</span><a href="http://fog.ccsf.cc.ca.us/~srubin/exbk2c.html">example</a>.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <p></p>
+                            <p><b>Part 4:<span class="Apple-converted-space">&nbsp;</span></b>
+                                <br>
+                                <br>Create a webpage that contains a script that calculates the squares and cubes of the numbers 1 to 6 and outputs text that displays (using document.write statements) the resulting values in a table format, as follows:
+                                <br>
+                                <br>
+                            </p>
+                            <table border="1" cellspacing="3">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Number</td>
+                                        <td style="border: 1px dotted gray;">Square</td>
+                                        <td style="border: 1px dotted gray;">Cube</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">1</td>
+                                        <td style="border: 1px dotted gray;" align="right">1</td>
+                                        <td style="border: 1px dotted gray;" align="right">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">2</td>
+                                        <td style="border: 1px dotted gray;" align="right">4</td>
+                                        <td style="border: 1px dotted gray;" align="right">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">3</td>
+                                        <td style="border: 1px dotted gray;" align="right">9</td>
+                                        <td style="border: 1px dotted gray;" align="right">27</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">4</td>
+                                        <td style="border: 1px dotted gray;" align="right">16</td>
+                                        <td style="border: 1px dotted gray;" align="right">64</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">5</td>
+                                        <td style="border: 1px dotted gray;" align="right">25</td>
+                                        <td style="border: 1px dotted gray;" align="right">125</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;" align="right">6</td>
+                                        <td style="border: 1px dotted gray;" align="right">36</td>
+                                        <td style="border: 1px dotted gray;" align="right">216</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p></p>
+                            <p>Right below this table on the same page, use a script containing getElementById and innerHTML, and a form button to create and write a similar table of squares and cubes using numbers 7-10. When the user clicks this button then the table should be generated right below it. Here is a<span class="Apple-converted-space">&nbsp;</span><a href="http://fog.ccsf.cc.ca.us/~srubin/hw2dDisplay1.html">sample display</a><span class="Apple-converted-space">&nbsp;</span>before the submit button is clicked. Here is a <a href="http://fog.ccsf.cc.ca.us/~srubin/hw2dDisplay2.html">sample display</a><span class="Apple-converted-space">&nbsp;</span>after the submit button is clicked.<span style="font-size: xx-small;" size="1"><span class="Apple-converted-space">&nbsp;</span>(<span style="font-weight: bold;">Note: The scripts do not require any input from the user. Remember to also right justify the integers.)</span></span>
+                            </p>
+                            <p><span style="font-size: xx-small;" size="1"><span style="font-weight: bold;"><br></span></span>
+                            </p>
+                            <p></p>
+                            <p><b>EXTRA CREDIT:<span class="Apple-converted-space">&nbsp;</span></b>
+                                <br>
+                                <br>
+                            </p>
+                            <p>The exchange rates for 1 U.S. dollar on June 20, 2015 were:</p>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">British Pound</td>
+                                        <td style="border: 1px dotted gray;" align="right">0.62998</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Canadian Dollar</td>
+                                        <td style="border: 1px dotted gray;" align="right">1.22700</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Euro</td>
+                                        <td style="border: 1px dotted gray;" align="right">0.88052</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Japanese Yen</td>
+                                        <td style="border: 1px dotted gray;" align="right">102.7000</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Mexican Peso</td>
+                                        <td style="border: 1px dotted gray;" align="right">15.3477</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p></p>
+                            <p>Create a webpage containing a script that will input an amount in U.S. dollars and display in a table its equivalent in each of the above foreign currencies, rounded to 2 decimal places. You should also right justify the amounts.
+                                <br>
+                                <br>For example: an input of 10 U.S. dollars yields:
+                                <br>
+                                <br>
+                            </p>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">British Pound</td>
+                                        <td style="border: 1px dotted gray;" align="right">6.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Canadian Dollar</td>
+                                        <td style="border: 1px dotted gray;" align="right">12.27</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Euro</td>
+                                        <td style="border: 1px dotted gray;" align="right">8.81</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Japanese Yen</td>
+                                        <td style="border: 1px dotted gray;" align="right">1027.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Mexican Peso</td>
+                                        <td style="border: 1px dotted gray;" align="right">153.48</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p></p>
+                            <p><b><br></b></p>
+                            <p><b>Use jQuery to display 'Click to Show/Hide Instructions' above the table and upon clicking this then display 'The foreign exchange rates on <span style="color: rgb(0, 0, 0); font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-size: 14.039999961853px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: 19.6560001373291px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; float: none; display: inline !important; background-color: rgb(247, 247, 247);">June 20, 2015</span>' and 'Enter a dollar amount in the table below to see the corresponding foreign exchange values'. See this jQuery example: <a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle">Show/Hide Panel example</a>.</b>
+                                <br>
+                                <br>I suggest using the following display:
+                                <br>
+                                <br>
+                            </p>
+                            <p id="yui_3_15_0_2_1472942809620_244">Click to Show/Hide Instructions</p>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="3">Monetary Exchange Rates</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Currency</th>
+                                        <th>Rate</th>
+                                        <th>Value</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">British Pound</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="0.62998" size="12" disabled="disabled" style="text-align: right;" type="text">
+                                        </td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="pounds" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Canadian Dollar</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="1.22700" size="12" disabled="disabled" style="text-align: right;" type="text">
+                                        </td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="cdollars" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Euro</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="0.88052" size="12" disabled="disabled" style="text-align: right;" type="text">
+                                        </td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="euros" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Japanese Yen</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="102.7000" size="12" disabled="disabled" style="text-align: right;" type="text">
+                                        </td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="jyen" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Mexican Peso</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="15.3477" size="12" disabled="disabled" style="text-align: right;" type="text">
+                                        </td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="mpesos" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="border: 1px dotted gray;"><b>Enter Amount of U.S. Dollars</b></td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input size="12" name="dollars" style="text-align: right;" type="text">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <br>
+                                <input value="Calculate" type="button"><span class="Apple-converted-space">&nbsp;</span>
+                                <input value="Reset" type="reset"><span class="Apple-converted-space">&nbsp;</span>
+                                <br><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-weight: bold;"></span></p>
+                            <p><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-weight: bold;">Use jQuery to color the input text box to the right of '</span><b style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Enter Amount of U.S. Dollars'</b><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-weight: bold;"><span class="Apple-converted-space">&nbsp;</span>when the user clicks in that box. For an example, see source code in:<span class="Apple-converted-space">&nbsp;</span><a href="http://fog.ccsf.cc.ca.us/~srubin/complete_events_intro.html">http://fog.ccsf.cc.ca.us/~srubin/complete_events_intro.html</a>
+                                <br>
+                                </span>
+                            </p>
+                            <p><span style="font-weight: bold; font-size: medium;">Note:</span><span class="Apple-converted-space">&nbsp;</span>that the above values for rates can be displayed as faded text within a grey box, by using the attribute of disabled in the form input statements. An alternative is to use the attribute of readonly, which will display the rates as normal text within a grey box.</p>
+                            <p>
+                                <br>
+                            </p>
+                            <hr style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                            <p><span style="color: #000000; font-family: 'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; font-size: large;" size="4">To submit your homework<span style="font-weight: bold;">:</span></span>
+                            </p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">1. Once you upload your Homework 2 pages to the Hills server, make sure you can view the pages in a web browser.
+                                <br>2. Highlight the URL of your base Homework 2 page in the browser address bar and copy it.
+                                <br>3. Next, on this page, click the "<span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-size: 14.039999961853px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.6560001373291px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">Add</span> Submission" button below.
+                                <br>4. Scroll down to the text box. Click in the text box and paste the URL. You can also type in any comments or questions you would like me to see.
+                                <br>5. Click the "Save Changes" button to submit your assignment.</p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="font-weight: bold;">Resubmission</span>:</p>
+                            <p><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline !important; float: none;">If I don't approve your first submission, you'll see comments in the dialog box below. You won't receive a grade yet until you resubmit by clicking on "edit my submission" and in the box with your URL listed, tell me you've made the corrections and then resubmit. Then I'll look again, and if all is good, assign a grade.</span></p>
+                            <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">After I have approved your Homework 2, you should post your "After Completion Report".</p>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </main>
+        <footer>
+            <p id="last-modified">
+                <script type="text/javascript">
+                // I've just used the script from the teacher sample as it's pretty straight forward.
+
+                // Save the document property lastModified in a variable
+                var dateModified = document.lastModified;
+                // Removing second from String dateModified ( :ss )
+                mydate = dateModified.slice(0, 16);
+                // Printing last updated date to document
+                document.write("Last updated: " + mydate);
+                </script>
+            </p>
+            <div id="validations">
+                <a target="_blank" href="https://validator.w3.org/check?uri=referer"><img src="./assets/html5a.jpg" alt="HTML5"></a>
+                <a target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./assets/vcss-blue.gif" alt="Valid CSS!"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

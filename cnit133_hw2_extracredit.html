@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CNIT 133 - Homework 2 - Basic Operations</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script language="javascript" src="js/jquery-3.1.0.js"></script>
+
+
+    <script language="javascript" src="js/cnit133_hw2_extracredit.js"></script>
+</head>
+
+<body id="homework-2-extra-credit">
+    <div class="container">
+        <header>
+            <h1>CNIT 133 Homework Page</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="cnit133_hw1.html">HW1</a></li>
+                    <li class="active"><a href="cnit133_hw2.html">HW2</a></li>
+                    <li><a href="cnit133_hw3.html">HW3</a></li>
+                    <li><a href="cnit133_hw4.html">HW4</a></li>
+                    <li><a href="cnit133_hw5.html">HW5</a></li>
+                    <li><a href="cnit133_hw6.html">HW6</a></li>
+                    <li><a href="cnit133_hw7.html">HW7</a></li>
+                    <li><a href="cnit133_hw8.html">HW8</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Homework 2 - Basic Operations</h1>
+            </header>
+            <main>
+                <aside class="sub-menu">
+                    <ul>
+                        <li><a href="cnit133_hw2_part1.html">Part 1 - document.write statements</a></li>
+                        <li><a href="cnit133_hw2_part2.html">Part 2 - Input 3 integers</a></li>
+                        <li><a href="cnit133_hw2_part3.html">Part 3 - jQuery</a></li>
+                        <li><a href="cnit133_hw2_part4.html">Part 4 - Calculation Table</a></li>
+                        <li class="active"><a href="cnit133_hw2_extracredit.html">Extra Credit - Exchange rates</a></li>
+                    </ul>
+                </aside>
+                <article>
+                    <button id="instructionsBtn">Click to Show/Hide Instructions</button>
+                    <div id="instructions" style="display:none">
+                        <p>'The foreign exchange rates on June 20, 2015'</p>
+                        <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values'.</p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">Monetary Exchange Rates</th>
+                            </tr>
+                            <tr>
+                                <th>Currency</th>
+                                <th>Rate</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>British Pound</td>
+                                <td>
+                                    <input id="poundsRate" value="0.62998" disabled="disabled" type="text">
+                                </td>
+                                <td>
+                                    <input disabled="disabled" type="text" id="pounds">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Canadian Dollar</td>
+                                <td>
+                                    <input id="cdollarsRate" value="1.22700" disabled="disabled" type="text">
+                                </td>
+                                <td>
+                                    <input disabled="disabled" id="cdollars">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Euro</td>
+                                <td>
+                                    <input id="euroRate" value="0.88052" disabled="disabled" type="text">
+                                </td>
+                                <td>
+                                    <input disabled="disabled" id="euro">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Japanese Yen</td>
+                                <td>
+                                    <input id="yensRate" value="102.7000" disabled="disabled" type="text">
+                                </td>
+                                <td>
+                                    <input disabled="disabled" id="yens">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mexican Peso</td>
+                                <td>
+                                    <input id="pesosRate" value="15.3477" disabled="disabled" type="text">
+                                </td>
+                                <td>
+                                    <input disabled="disabled" id="pesos">
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Enter Amount of U.S. Dollars</td>
+                                <td>
+                                    <input id="dollars">
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="controlers">
+                        <button id="calculateBtn">Calculate</button>
+                        <button id="resetBtn">Reset</button>
+                    </div>
+                </article>
+            </main>
+        </main>
+        <footer>
+            <p id="last-modified">
+                <script type="text/javascript">
+                // I've just used the script from the teacher sample as it's pretty straight forward.
+
+                // Save the document property lastModified in a variable
+                var dateModified = document.lastModified;
+                // Removing second from String dateModified ( :ss )
+                mydate = dateModified.slice(0, 16);
+                // Printing last updated date to document
+                document.write("Last updated: " + mydate);
+                </script>
+            </p>
+            <div id="validations">
+                <a target="_blank" href="https://validator.w3.org/check?uri=referer"><img src="./assets/html5a.jpg" alt="HTML5"></a>
+                <a target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./assets/vcss-blue.gif" alt="Valid CSS!"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
