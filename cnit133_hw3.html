@@ -1,49 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>CNIT 133 - Homework 3 - Functions</title>
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-	</head>
-	<body id="homework-3">
-		<div class="container">
-			<header>
-				<h1>CNIT 133 Homework Page</h1>
-				<nav id="main-nav">
-					<ul>
-						<li><a href="cnit133_hw1.html">HW1</a></li>
-						<li><a href="cnit133_hw2.html">HW2</a></li>
-						<li class="active"><a href="cnit133_hw3.html">HW3</a></li>
-						<li><a href="cnit133_hw4.html">HW4</a></li>
-						<li><a href="cnit133_hw5.html">HW5</a></li>
-						<li><a href="cnit133_hw6.html">HW6</a></li>
-						<li><a href="cnit133_hw7.html">HW7</a></li>
-						<li><a href="cnit133_hw8.html">HW8</a></li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<h1>Homework 3 - Functions</h1>
-				<p>Under construction</p>
-			</main>
-			<footer>
-				<p id="last-modified">
-					<script type="text/javascript">
-						// I've just used the script from the teacher sample as it's pretty straight forward.
 
-						// Save the document property lastModified in a variable
-						var dateModified = document.lastModified;
-						// Removing second from String dateModified ( :ss )
-						mydate = dateModified.slice(0,16);
-						// Printing last updated date to document
-						document.write("Last updated: " + mydate);	
-					</script>
-				</p>
-				<div id="validations">
-					<a target="_blank" href="https://validator.w3.org/check?uri=referer"><img src="./assets/html5a.jpg" alt="HTML5"></a>
-					<a target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./assets/vcss-blue.gif" alt="Valid CSS!"></a>
-				</div>
-			</footer>
-		</div>
-	</body>
+<head>
+    <title>CNIT 133 - Homework 3 - Functions</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body id="homework-2-part-1">
+    <div class="container">
+        <header>
+            <h1>CNIT 133 Homework Page</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="cnit133_hw1.html">HW1</a></li>
+                    <li><a href="cnit133_hw2.html">HW2</a></li>
+                    <li class="active"><a href="cnit133_hw3.html">HW3</a></li>
+                    <li><a href="cnit133_hw4.html">HW4</a></li>
+                    <li><a href="cnit133_hw5.html">HW5</a></li>
+                    <li><a href="cnit133_hw6.html">HW6</a></li>
+                    <li><a href="cnit133_hw7.html">HW7</a></li>
+                    <li><a href="cnit133_hw8.html">HW8</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h1>Homework 3 - Functions</h1>
+            </header>
+            <main>
+                <aside class="sub-menu">
+                    <ul>
+                        <li><a href="cnit133_hw3_part1.html">Part 1 - Student's final average</a></li>
+                        <li><a href="cnit133_hw3_part2.html">Part 2 - Salesperson report</a></li>
+                        <li><a href="cnit133_hw3_part3.html">Part 3 - Customer credit limit</a></li>
+                        <li><a href="cnit133_hw3_part4.html">Part 4 - Palindromes</a></li>
+                        <li><a href="cnit133_hw3_part5.html">Part 5 - Celsius / Fahrenheit conversion</a></li>
+                        <li><a href="cnit133_hw3_part6.html">Part 6 - Learn multiplication</a></li>
+                        <li><a href="cnit133_hw3_extracredit.html">Extra Credit - Craps</a></li>
+                    </ul>
+                </aside>
+                <article id="main-content">
+                    <div class="no-overflow" id="yui_3_15_0_2_1473745761021_236">
+                        <p id="yui_3_15_0_2_1473745761021_248"><span style="color: #000000; font-family: 'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; font-size: large;" size="4" id="yui_3_15_0_2_1473745761021_247"><span style="font-weight: bold;" id="yui_3_15_0_2_1473745761021_246">Homework 3 - Functions</span></span><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;" size="3"><span style="font-weight: bold;"><br></span>
+                            <br style="font-weight: bold;"><span style="font-weight: bold;">Due Date: Sept 24</span>
+                            <br>
+                            </span><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline !important; float: none;"></span></p>
+                        <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">Create a web page with the heading CNIT 133 Homework 3 - Functions
+                            <br>
+                            <br>The contents of this page should be a list of links referring to Parts 1-6 discussed below. Label the links, Part1, Part2, Part3, Part4, Part5, and Part6. Include a short description after each part.</p>
+                        <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"></p>
+                        <p id="yui_3_15_0_2_1473745761021_235"><span style="font-size: medium;"><strong>Part 1:<span class="Apple-converted-space">&nbsp;</span></strong>
+                            </span>
+                            <br>
+                            <br>Create a webpage that contains the heading, Student Grades, and a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers). Be sure to check for valid input, i.e., that the input is between 0-100. Calculate the student's final average according to the formula:
+                            <br>
+                            <br>final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)
+                            <br>
+                            <br>Using form text boxes, display the student's final average (<span style="font-weight: bold;">rounded to an integer</span>) and final letter grade using the following:<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                        </p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">90-100</td>
+                                    <td style="border: 1px dotted gray;">A</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">80-89</td>
+                                    <td style="border: 1px dotted gray;">B</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">70-79</td>
+                                    <td style="border: 1px dotted gray;">C</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">60-69</td>
+                                    <td style="border: 1px dotted gray;">D</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">0-59</td>
+                                    <td style="border: 1px dotted gray;">F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <br>If the student's final grade is 'D' or 'F' then display "Student must retake the course". Be sure to check for valid input. Use jQuery to display 'Click to Show/Hide Instructions' above the table and upon clicking this then display 'The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)'. Calculate the student's final average according to the formula:<span class="Apple-converted-space">&nbsp;</span><span style="font-weight: bold;">final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)</span><span class="Apple-converted-space">&nbsp;</span>'. See this jQuery example:<span class="Apple-converted-space">&nbsp;</span><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle">Show/Hide Panel</a><span class="Apple-converted-space">&nbsp;</span>example.</p>
+                        <p></p>
+                        <p></p>
+                        <p><strong><span style="font-size: medium;">Part 2:</span></strong>&nbsp;</p>
+                        <p>A large company pays its salespeople on a commission basis. The salespeople receive $200 per week, plus 9% of their gross sales for that week. For example, a salesperson who sells $5000 worth of merchandise in a week receives $200 plus 9% of $5000, or a total of $650. You have been supplied with a list of the items sold by each salesperson. The value of these items are as follows:</p>
+                        <table cellspacing="5">
+                            <tbody>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Value</th>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">1</td>
+                                    <td style="border: 1px dotted gray;">239.99</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">2</td>
+                                    <td style="border: 1px dotted gray;">129.75</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">3</td>
+                                    <td style="border: 1px dotted gray;">99.95</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px dotted gray;">4</td>
+                                    <td style="border: 1px dotted gray;">350.89</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="yui_3_15_0_2_1473745761021_239">Create a webpage that contains a script that includes a<span class="Apple-converted-space">t the top of your form&nbsp; a text box for the salesperson's name for the user to enter. When the user's mouse hovers over this name field, use the jQuery UI tooltip coding to display the message "Please make sure that the salesperson's name is spelled correctly". See this site for more about the <a href="http://jqueryui.com/tooltip/">jQuery UI tooltip</a>. Next</span> input that salesperson's items sold for last week, calculates how much the salesperson sold and how much they earned, and then output the results. Be sure to round the outputted results to 2 decimal places. Use form text boxes to input the number sold for each of the items 1-4. You should also check for valid numeric input and right-justify all amounts. Here is a<span class="Apple-converted-space">&nbsp;</span><a href="http://fog.ccsf.edu/~srubin/h3pt2display.html">sample display</a><span class="Apple-converted-space">&nbsp;</span>using tables and form elements.<span class="Apple-converted-space"> &nbsp;</span></p>
+                        <p></p>
+                        <p id="yui_3_15_0_2_1473745761021_240"><strong><span style="font-size: medium;">Part 3:</span></strong><span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>Create a webpage containing a script that will determine whether a department-store customer has exceeded the credit limit on their charge account.
+                            <br>
+                            <br>For input, the following facts should be available in form input text boxes:
+                            <br>
+                            <br>a) Account number
+                            <br>b) Balance at the beginning of the month
+                            <br>c) Total of all items charged by this customer this month
+                            <br>d) Total of all credits applied to this customer's account this month
+                            <br>e) Allowed credit limit
+                            <br>
+                            <br>Validate whether the account number has been entered and that the amount items are numeric. If there is an error then display an error message using an alert, innerHTML, or jQuery.
+                            <br>
+                            <br>Calculate the new balance (which equals beginning balance + charges – credits), and determine whether the new balance exceeds the customer's credit limit and by how much. Then display in a form textarea, the new balance and whether the customer has exceeded their credit limit and by how much, by displaying the message “Credit limit exceeded by X”, where X is the amount the credit limit was exceeded. If the customer is at or under their credit limit then display their new balance and the message "Credit available is X", where X is the amount of their available credit.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>In addition, define a 'Click to change Textarea Display' button at the bottom of the form. Use jQuery to define a ready handler that defines a click event handler for the button, such that clicking the button changes the textarea results to a background color of black and changes the textarea text to a white color, large, and bold-faced.
+                            <br>
+                            <br>See this jQuery example:<span class="Apple-converted-space">&nbsp;</span><a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_property_sets">Change multiple CSS properties</a>.
+                            <br>
+                            <br>Sample Output:
+                            <br>
+                            <br>Credit Account Summary Account Number: 1111
+                            <br>Credit Limit: 1000
+                            <br>Balance at beginning of month: 300
+                            <br>Total amount charged this month: 100
+                            <br>Total amount of credits this month: 50
+                            <br>Summary: The new balance is 350
+                            <br>Credit available is 650
+                            <br>
+                            <br>Credit Account Summary Account Number: 2222
+                            <br>Credit Limit: 1000
+                            <br>Balance at beginning of month: 300
+                            <br>Total amount charged this month: 1000
+                            <br>Total amount of credits this month: 100
+                            <br>Summary: The new balance is 1200
+                            <br>Credit limit exceeded by 200<span class="Apple-converted-space">&nbsp;</span></p>
+                        <p></p>
+                        <p><strong><span style="font-size: medium;">Part 4:</span></strong></p>
+                        <p id="yui_3_15_0_2_1473745761021_241">A palindrome is a number or a text phrase that reads the same backward and forward. For example: 12321, 55555, 11611, 45554. Create a webpage that contains a script that inputs a five-digit integer (not starting with zero) that determines and outputs a message stating whether or not it's a palindrome. If the number is not five digits long, display an error message indicating the problem to the user. Utilize jQuery UI for displaying a button that will be used to display the instruction: "Input a five-digit integer (not starting with zero) to display if it is a palindrome, not a palindrome, or an input error." See this jQuery UI<span class="Apple-converted-space">&nbsp;</span><a href="http://fog.ccsf.cc.ca.us/~srubin/coinFlip2a.html">example</a>.
+                            <br>
+                            <br>[Hint: the string method charAt() is useful in solving this problem.]</p>
+                        <p></p>
+                        <p id="yui_3_15_0_2_1473745761021_242"><strong><span style="font-size: medium;">Part 5:<span class="Apple-converted-space">&nbsp;</span></span></strong>
+                            <br>
+                            <br>Create a webpage using form text boxes that:
+                            <br>
+                            <br>a) contains the function<span class="Apple-converted-space">&nbsp;</span><b>celsius</b>, that returns the Celsius equivalent of a Fahrenheit temperature, using the calculation:
+                            <br>
+                            <br>C = 5/9 * (F - 32)<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>b) contains the function<span class="Apple-converted-space">&nbsp;</span><b>fahrenheit</b><span class="Apple-converted-space">&nbsp;</span>that returns the Fahrenheit equivalent of a Celsius temperature, using the calculation:
+                            <br>
+                            <br>F = (9/5 * C) + 32
+                            <br>
+                            <br>c) Use these functions to write a script that enables the user to enter either a Fahrenheit or a Celsius temperature and displays the Celsius or Fahrenheit equivalent.
+                            <br>
+                            <br>Your document should contain two form buttons - one to initiate the conversion from Fahrenheit to Celsius and one to initiate the conversion from Celsius to Fahrenheit.&nbsp;<span class="Apple-converted-space"> </span><span style="font-weight: bold;" id="yui_3_15_0_2_1473745761021_243">[Note that 0 degrees Celsius = 32 degrees Fahrenheit].<span class="Apple-converted-space">&nbsp;</span></span>Be sure to test for a non-numeric value entered by the user and if so, then then use an alert or innerHTML to display "Please input a numeric value".</p>
+                        <p></p>
+                        <p id="yui_3_15_0_2_1473745761021_244"><span style="font-size: medium;"><strong> Part 6:</strong></span>
+                            <br>
+                            <br>Computers are playing an increasing role in education. Write a program that will help an elementary school student learn multiplication. Use Math.random to produce two one-digit integers (0-9). It should then display a question such as:
+                            <br>
+                            <br>How much is 6 times 7?
+                            <br>
+                            <br>The student then types the answer into a text field. Your program checks the student's answer. If it is correct, display the string "Very good!" in an alert or directly on the page, and then prompt the user to see whether they wish to continue by using the confirm statement. If true, then generate a new question. If not, then exit the script.
+                            <br>
+                            <br>If the answer to the multiplication question is wrong, display the string "No. Please try again." in an alert or directly on the page, and let the student try the same question again repeatedly until the student finally gets it right. A separate function should be used to generate each new question. This function should be called once when the script begins execution and each time the user answers the question correctly. Note that whether the answer is correct or not, you should clear the answer box after the question is answered.</p>
+                        <p></p>
+                        <p id="yui_3_15_0_2_1473745761021_245"><strong><span style="font-size: medium;">EXTRA CREDIT</span></strong>:
+                            <br>
+                            <br>One of the most popular games is a dice game known as "craps". The rules of the game are straightforward:
+                            <br>
+                            <br>A player rolls two dice. Each die has six faces containing 1, 2, 3, 4, 5, and 6 spots, respectively. After the dice have come to rest, the sum of the spots on the two upward faces is calculated. If the sum is 7 or 11 on the first throw, the player wins. If the sum is 2, 3, or 12 on the first throw (called "craps"), the player loses (that is, the "house" wins). If the sum is 4, 5, 6, 8, 9, or 10 on the first throw, that sum becomes the player's "point". To win, you must continue rolling the dice until you "make your point" (that is roll your point value). The player loses by rolling a 7 before making the point.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>Write a script to simulate the game of craps using Math.random. I suggest also using the following format:
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>
+                            <br>You play the game, by clicking the<span class="Apple-converted-space">&nbsp;</span><i>Roll Dice</i><span class="Apple-converted-space">&nbsp;</span>button, thus executing your script. Use an alert, a textarea, or the innerHTML and getElementById method to display the results of each roll. Here are four separate executions of the script (a win and a loss on the first roll, and a win and a loss after the first roll).
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="4" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="3" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="7" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Player wins. Click Roll Dice to play again.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="12" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Player loses. Click Roll Dice to play again.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="3" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="5" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="8" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" value="8" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Roll Dice.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="4" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="4" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="8" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" value="8" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Player wins. Click Roll Dice to play again.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="3" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="9" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" value="9" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Roll Dice.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="12" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" value="9" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Roll Dice.<span class="Apple-converted-space">&nbsp;</span>
+                            <br>
+                            <br>
+                            <br>
+                        </p>
+                        <form>
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 1</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="firstdie" value="6" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Die 2</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="secondDie" value="1" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Sum</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="sum" value="7" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">Point</td>
+                                        <td style="border: 1px dotted gray;">
+                                            <input name="point" value="9" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px dotted gray;">
+                                            <input value="Roll Dice" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <p>Display: Player loses. Click Roll Dice to play again.</p>
+                        <p><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-weight: bold;"></span>
+                            <br style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                            <br style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                        </p>
+                        <hr style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                        <p><span style="color: #000000; font-family: 'Trebuchet MS',Verdana,Arial,Helvetica,sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; font-size: large;" size="4">To submit your homework<span style="font-weight: bold;">:</span></span>
+                        </p>
+                        <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">1. Once you upload your Homework 3 pages to the Hills server, make sure you can view the pages in a web browser.
+                            <br>2. Highlight the URL of your base Homework 3 page in the browser address bar and copy it.
+                            <br>3. Next, on this page, click the "<span style="color: rgb(51, 51, 51); font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; font-size: 14.039999961853px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.6560001373291px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">Add</span> Submission" button below.
+                            <br>4. Scroll down to the text box. Click in the text box and paste the URL. You can also type in any comments or questions you would like me to see.
+                            <br>5. Click the "Save Changes" button to submit your assignment.</p>
+                        <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="font-weight: bold;">Resubmission</span>:</p>
+                        <p><span style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline !important; float: none;">If I don't approve your first submission, you'll see comments in the dialog box below. You won't receive a grade yet until you resubmit by clicking on "edit my submission" and in the box with your URL listed, tell me you've made the corrections and then resubmit. Then I'll look again, and if all is good, assign a grade.</span></p>
+                        <p style="color: #000000; font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                            <br>After I have approved your Homework 3, you should post your "After Completion Report".</p>
+                    </div>
+                </article>
+            </main>
+        </main>
+        <footer>
+            <p id="last-modified">
+                <script type="text/javascript">
+                // I've just used the script from the teacher sample as it's pretty straight forward.
+
+                // Save the document property lastModified in a variable
+                var dateModified = document.lastModified;
+                // Removing second from String dateModified ( :ss )
+                mydate = dateModified.slice(0, 16);
+                // Printing last updated date to document
+                document.write("Last updated: " + mydate);
+                </script>
+            </p>
+            <div id="validations">
+                <a target="_blank" href="https://validator.w3.org/check?uri=referer"><img src="./assets/html5a.jpg" alt="HTML5"></a>
+                <a target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./assets/vcss-blue.gif" alt="Valid CSS!"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
