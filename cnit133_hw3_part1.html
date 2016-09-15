@@ -5,6 +5,9 @@
     <title>CNIT 133 - Homework 3 - Functions</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script language="javascript" src="js/jquery-3.1.0.js"></script>
+    <script language="javascript" src="js/cnit133_hw3_part1.js"></script>
+
 </head>
 
 <body id="homework-3-part-1">
@@ -41,7 +44,45 @@
                     </ul>
                 </aside>
                 <article id="main-content">
-           			<script language="javascript" src="js/cnit133_hw3_part1.js"></script>  	
+                    <h1>Student Grades</h1>
+                    <button id="show-instructions">Click to Show/Hide Instructions</button>
+                    <div id="instructions" style="display:none;">
+                        <p>'The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)'. Calculate the student's final average according to the formula: final average = (.5 hwAvg) + (.2 midExam) + (.2 finalExam) + (.1 ACR).</p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Points</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>90-100</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>80-89</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>70-79</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>60-69</td>
+                                <td>D</td>
+                            </tr>
+                            <tr>
+                                <td>0-59</td>
+                                <td>F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <form name="myform">
+                        <input type="button" onclick="process()" value="Calculate Student Final Average">
+                        <input id="result" type="text" placeholder="result" name="result" disabled>
+                    </form>
                 </article>
             </main>
         </main>
