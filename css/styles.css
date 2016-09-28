@@ -200,6 +200,15 @@ footer > #validatations > a:nth-of-type(2) {}
  	color: #fff;
 }
 
+form input[type="button"],
+form input[type="reset"]{
+	border:1px solid white;
+	padding: 2px;
+	background: grey;
+	color: white;
+}
+
+
 
 /*************************************/
 /**************   Tables   ***********/
@@ -260,3 +269,33 @@ td{
 #homework-1 table#homework-summary > tbody > tr:nth-child(even){
 	background: #BDB498;
 }
+
+
+/*************************************/
+/***********   HOMEWORK 3  ***********/
+/*************************************/
+
+
+/*************   PART 2  *************/
+
+#homework-3-part-2 #myform > label{
+	margin-bottom: 25px;
+	display: inline-block;
+}
+
+#homework-3-part-2 #myform div{
+	display: flex;
+	flex-direction:column;
+}
+
+#homework-3-part-2 #myform div.controls{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: 5px;
+    width: 124px;
+}
+
+
+
