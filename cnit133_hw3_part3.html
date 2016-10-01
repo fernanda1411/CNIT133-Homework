@@ -5,6 +5,8 @@
     <title>CNIT 133 - Homework 3 - Functions</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script language="javascript" src="js/jquery-3.1.0.js"></script>
+    <script language="javascript" src="js/cnit133_hw3_part3.js"></script>
 </head>
 
 <body id="homework-3-part-3">
@@ -41,7 +43,40 @@
                     </ul>
                 </aside>
                 <article id="main-content">
-           			<script language="javascript" src="js/cnit133_hw3_part3.js"></script>  	
+              
+                    <form id="myform" name="myform">
+                        <label>
+                            <span>Account number</span>
+                            <input id="account" type="text" name="item1">
+                        </label>
+                        <label>
+                            <span>Balance at the beginning of the month</span>
+                            <input id="balance" type="text" name="item2">
+                        </label>
+                        <label>
+                            <span>Total of all items charged by this customer this month</span>
+                            <input id="itemsTotal" type="text" name="item3">
+                        </label>
+                        <label>
+                            <span>Total of all credits applied to this customer's account this month</span>
+                            <input id="creditsTotal" type="text" name="item4">
+                        </label>
+                        <label>
+                            <span>Allowed credit limit</span>
+                            <input id="creditAllowed" type="text" name="item4">
+                        </label>
+                        <div class="controls">
+                            <input id="resetForm" onclick="resetForm()" type="reset"  value="Reset">
+                            <input id="sendForm" onclick ="submitForm()" type="button" value="Submit">
+                        </div>
+                    </form>    
+                  
+                    <div>
+                        <textarea id="output" name=""></textarea>
+                        <button id="toogleTextArea">Click to change Textarea Display</button>
+                    </div> 
+                    </section>
+
                 </article>
             </main>
         </main>

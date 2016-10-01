@@ -241,7 +241,6 @@ input{
     padding: 2px;
 }
 
-button,
 form input[type="button"],
 form input[type="reset"] {
     border: 1px solid white;
@@ -389,25 +388,10 @@ td {
 	margin-right: 10px;
 }
 
-#homework-3-part-3 #main-content > div{
+#homework-3-part-3 #output{
+	border: 1px solid black;
 	width: 50%;
 	margin: 20px 0 28px 20px;
-	display: flex;
-	flex-direction: column;
-}
-
-#homework-3-part-3 div textarea{
 	padding: 10px;
-	width: 100%;
 	line-height: 2;
-	flex-grow: 1;
 }
-#homework-3-part-3 div textarea.changed{
-	background: salmon;
-	color: white;
-}
-#homework-3-part-3 div button{
-	margin-top: 10px;
-}
-
-
